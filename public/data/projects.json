@@ -1,0 +1,66 @@
+[
+  {
+    "id": "agent-kit-site",
+    "title": "Agent Kit",
+    "description": "A production-ready landing page template for AI automation and agent-based products.",
+    "stable": "Stable",
+    "tags": ["Template", "AI"],
+    "url": "https://github.com/pinak3748/agent-kit-site"
+  },
+  {
+    "id": "agency-kit-site",
+    "title": "Agency Kit",
+    "description": "A polished, responsive website template for agencies, startups, and businesses.",
+    "stable": "Stable",
+    "tags": ["Template", "Next.js"],
+    "url": "https://github.com/pinak3748/agency-kit-site"
+  },
+  {
+    "id": "mobile-app-store-listing-template",
+    "title": "Mobile App Store Listing Template",
+    "description": "A modern Next.js template that recreates the iOS App Store listing experience.",
+    "stable": "Stable",
+    "tags": ["Template", "Next.js"],
+    "url": "https://github.com/pinak3748/Mobile-App-Store-Listing-Template"
+  },
+  {
+    "id": "fluttercn",
+    "title": "fluttercn",
+    "description": "A copy-paste component library for Flutter, giving developers full ownership of every component.",
+    "stable": "V1",
+    "tags": ["Flutter", "Open Source"],
+    "url": "https://github.com/pinak3748/fluttercn"
+  },
+  {
+    "id": "flutter-boilerplate",
+    "title": "Flutter Boilerplate",
+    "description": "A production-ready Flutter starter built on top of the fluttercn ecosystem.",
+    "stable": "V1",
+    "tags": ["Flutter", "Boilerplate"],
+    "url": "https://github.com/pinak3748/flutter-boilerplate"
+  },
+  {
+    "id": "noximon",
+    "title": "Noximon",
+    "description": "A server monitoring tool for tracking uptime, API health, and system resources.",
+    "stable": "Stable",
+    "tags": ["Monitoring", "Developer Tool"],
+    "url": "https://github.com/pinak3748/Noximon"
+  },
+  {
+    "id": "nox-cli",
+    "title": "Nox CLI",
+    "description": "A CLI for quickly bootstrapping modern web projects with pages, components, and a ready-to-use stack.",
+    "stable": "Personal",
+    "tags": ["CLI", "Developer Tool"],
+    "url": "https://github.com/pinak3748/Nox-CLI"
+  },
+  {
+    "id": "noxflow",
+    "title": "NoxFlow",
+    "description": "A personal tool built for experimenting with workflows and internal automation.",
+    "stable": "Personal",
+    "tags": ["Tool", "Automation"],
+    "url": "https://github.com/pinak3748/NoxFlow"
+  }
+]

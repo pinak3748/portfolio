@@ -1,0 +1,346 @@
+[
+  {
+    "id": "ionio",
+    "company": "Ionio",
+    "logo": "/assets/case-study/ionio.png",
+    "link": "https://ionio.ai",
+    "projects": [
+      {
+        "id": "standard-draft",
+        "title": "Standard Draft",
+        "logo": "/assets/case-study/standard-draft/logo.jpeg",
+        "description": "A two-sided legal tech platform where both parties negotiate from one shared, neutral contract form instead of trading marked-up Word documents, cutting a routine enterprise contract from 31 days to about six hours.",
+        "features": [
+          {
+            "name": "One shared neutral form",
+            "description": "Both sides work the same live document from a neutral starting form, ending the opening fight over whose template wins and removing the document ping-pong that made contracts take a month."
+          },
+          {
+            "name": "Templating engine",
+            "description": "Every contract type lives as a template the platform assembles at runtime. An NDA runs to eight sections with three levels of nesting; configure a point on the left and the agreement rewrites itself on the right, at any depth."
+          },
+          {
+            "name": "Five-view comparison engine",
+            "description": "Renders each contract five ways: clean, marked up, your changes, the counterparty's changes, and the diff against the neutral form, plus a full version history chain, so nobody re-reads the whole document to find what moved."
+          }
+        ],
+        "tags": [
+          "SaaS",
+          "Legal Tech",
+          "Contract Management",
+          "Contract Negotiation",
+          "AI"
+        ],
+        "images": [
+          {
+            "src": "/assets/case-study/standard-draft/1.jpeg",
+            "width": 1600,
+            "height": 787,
+            "alt": "Contract designer split view"
+          },
+          {
+            "src": "/assets/case-study/standard-draft/2.jpeg",
+            "width": 1539,
+            "height": 714,
+            "alt": "Five-view comparison engine"
+          },
+          {
+            "src": "/assets/case-study/standard-draft/3.jpeg",
+            "width": 1529,
+            "height": 721,
+            "alt": "Templating and configuration panel"
+          },
+          {
+            "src": "/assets/case-study/standard-draft/4.jpeg",
+            "width": 1529,
+            "height": 709,
+            "alt": "In-platform contract workflow"
+          }
+        ],
+        "caseStudy": {
+          "title": "How We Built a Legal Tech Platform That Took a $7,000 Contract Down to Hours",
+          "link": "https://www.ionio.ai/case-study/standard-draft-two-sided-contract-negotiation-platform-ionio"
+        },
+        "blogs": []
+      },
+      {
+        "id": "education-org",
+        "title": "Education.org",
+        "logo": "/assets/case-study/education-org/logo.png",
+        "description": "An AI research platform for Education.org, a non-profit whose evidence guides where NGO funding and effort go, that turns 1,000+ unsearchable, multilingual documents into cited answers returned in seconds.",
+        "features": [
+          {
+            "name": "Ask Evidence tool",
+            "description": "A plain-language question goes in and a written, cited answer comes back, drawn from Education.org's own research. It runs the same way for the internal team and for the public, with a Sources card naming the exact document and inline markers tying each claim back to a real study."
+          },
+          {
+            "name": "Evidence Library & ingestion pipeline",
+            "description": "Every document is processed on the way in: language is detected, scanned files are read with OCR where needed, and non-English material is translated through DeepL into one common knowledge base, so a single question can reach across the entire collection."
+          },
+          {
+            "name": "Search automation",
+            "description": "Scrapers pull documents automatically from sources like the World Bank and the African Education Database, gathering more than a thousand documents across five source types into one place, turning days of manual desk searching into an unattended process."
+          }
+        ],
+        "tags": [
+          "AI Research Platform",
+          "RAG",
+          "OCR & Translation",
+          "Evidence Synthesis"
+        ],
+        "images": [
+          {
+            "src": "/assets/case-study/education-org/1.jpeg",
+            "width": 1280,
+            "height": 613,
+            "alt": "Ask Evidence question and answer view"
+          },
+          {
+            "src": "/assets/case-study/education-org/2.png",
+            "width": 1542,
+            "height": 1020,
+            "alt": "Evidence Library and sources"
+          },
+          {
+            "src": "/assets/case-study/education-org/3.jpeg",
+            "width": 1280,
+            "height": 614,
+            "alt": "Cited research answer with sources"
+          },
+          {
+            "src": "/assets/case-study/education-org/4.jpeg",
+            "width": 1280,
+            "height": 614,
+            "alt": "Evidence platform workflow"
+          }
+        ],
+        "caseStudy": {
+          "title": "How We Turned 1,000+ Unsearchable Documents Into Research That Answers in Seconds For a Non-Profit",
+          "link": "https://www.ionio.ai/education-org-ask-evidence-research-platform-ionio"
+        },
+        "blogs": []
+      },
+      {
+        "id": "ctd-ai",
+        "title": "CTDAI",
+        "logo": "/assets/case-study/ctd-ai/logo.svg",
+        "description": "In five weeks, Ionio built CTDAI, an autonomous SEO platform for dental practices that runs eight specialized AI agents to read a clinic’s online footprint, benchmark nearby competitors, and publish ranking content—turning Connect the Doc’s hand-delivered service into a recurring SaaS product.",
+        "features": [
+          {
+            "name": "Scout System",
+            "description": "Eight specialized agents (Local, Review, Website, Content, Ranking, Competitor, Strategy, Listing) each scan one slice of a clinic’s online presence in parallel, doing in seconds what a human SEO team would take days to assemble by hand."
+          },
+          {
+            "name": "Clinic Score",
+            "description": "Everything the Scouts find rolls up into a single score out of 100 with a plain-English read, turning scattered data on rankings, reviews, and competitor gaps into one clear verdict a busy practice owner can act on."
+          },
+          {
+            "name": "Growth Plan",
+            "description": "Beyond diagnosis, the platform identifies losing searches, generates publish-ready SEO content accurate to the practice, fixes technical issues, and tracks competitors continuously so the plan stays current."
+          }
+        ],
+        "tags": ["SaaS", "SEO", "Dental", "AI Agents", "Multi-Agent"],
+        "images": [
+          {
+            "src": "/assets/case-study/ctd-ai/1.png",
+            "width": 0,
+            "height": 0,
+            "alt": "CTDAI dashboard with live agent activity and spy network"
+          },
+          {
+            "src": "/assets/case-study/ctd-ai/2.png",
+            "width": 0,
+            "height": 0,
+            "alt": "CTDAI content pipeline board with blog and GMB workflow"
+          },
+          {
+            "src": "/assets/case-study/ctd-ai/3.png",
+            "width": 0,
+            "height": 0,
+            "alt": "CTDAI content strategy chat with keyword performance breakdown"
+          },
+          {
+            "src": "/assets/case-study/ctd-ai/4.png",
+            "width": 0,
+            "height": 0,
+            "alt": "CTDAI signal strength overview with score breakdown"
+          }
+        ],
+        "caseStudy": {
+          "title": "From Agency Hours to SaaS Revenue In Five Weeks",
+          "link": "https://www.ionio.ai/case-study/connect-the-doc-ai-seo-saas-platform-ionio"
+        },
+        "blogs": []
+      },
+      {
+        "id": "gleac",
+        "title": "GLEAC",
+        "logo": "/assets/case-study/gleac/logo.png",
+        "description": "Ionio turned GLEAC’s 1,000-person mentor network into an AI-native platform, cutting mentor onboarding from an hour to under ten minutes and doubling intake (100% increase). Six AI systems shipped over two years, from a voice interviewer to automated evaluation and matching.",
+        "features": [
+          {
+            "name": "Voice Interviewer",
+            "description": "A live, conversational onboarding that reads an applicant’s LinkedIn profile and generates every question in real time from their prior answer, so no two interviews are alike and answers are hard to fake with ChatGPT."
+          },
+          {
+            "name": "Mentor Evaluation System",
+            "description": "Automates the three-human evaluation batch that once took three to four weeks, aiming to cut manual effort roughly 95%, bring approvals down to same-day, and remove the inconsistency of evaluators scoring the same application differently."
+          },
+          {
+            "name": "Micro Practice Engine",
+            "description": "A RAG-based recommendation system with three entry points—a pasted LinkedIn profile, a plain-language question, or an uploaded document—that resolves to a journey map of relevant lessons and a conversational walkthrough of situational questions."
+          }
+        ],
+        "tags": ["AI", "Mentor Network", "Voice AI", "RAG", "SaaS"],
+        "images": [
+          {
+            "src": "/assets/case-study/gleac/1.png",
+            "width": 0,
+            "height": 0,
+            "alt": "GLEAC mentor application platform welcome screen with a Get Started button"
+          },
+          {
+            "src": "/assets/case-study/gleac/2.png",
+            "width": 0,
+            "height": 0,
+            "alt": "GLEAC application form asking for first name, last name, email and LinkedIn URL"
+          },
+          {
+            "src": "/assets/case-study/gleac/3.png",
+            "width": 0,
+            "height": 0,
+            "alt": "GLEAC platform reading the applicant’s career history in the background"
+          },
+          {
+            "src": "/assets/case-study/gleac/4.png",
+            "width": 0,
+            "height": 0,
+            "alt": "GLEAC platform assembling a tailored interview for the applicant"
+          }
+        ],
+        "caseStudy": {
+          "title": "How We 2x’d Intake for a 1,000-Person Expert Network: Onboarding Time Cut from an Hour to Under 10 Minutes",
+          "link": "https://www.ionio.ai/case-study/gleac-ai-native-mentor-network-platform-ionio"
+        },
+        "blogs": []
+      },
+      {
+        "id": "dispute-dine",
+        "title": "Dispute Dine",
+        "logo": "/assets/case-study/dispute-dine/logo.png",
+        "description": "Ionio built DisputeDine, a SaaS platform that automatically disputes fraudulent refund claims across DoorDash, Uber Eats, and Grubhub. Built in 8 weeks, it recovers ~$2,500 per location monthly while eliminating 10-12 hours of weekly manual work.",
+        "features": [
+          {
+            "name": "Undetectable Browser Automation",
+            "description": "Puppeteer-driven automation (with Selenium fallback) files disputes on platforms that have no dispute APIs. Randomized delays, natural mouse movements, and session persistence make it indistinguishable from a human so accounts don’t get flagged."
+          },
+          {
+            "name": "2FA Interception System",
+            "description": "Intercepts platform 2FA verification codes via a controlled email inbox, parses them, and injects them into the waiting automation session within the 60-second expiry window, enabling logins without human intervention."
+          },
+          {
+            "name": "Dispute Intelligence Engine",
+            "description": "Analyzes each claim’s reason, order value, and items to generate customized, evidence-based rebuttals with platform-specific formatting, then tracks dispute outcomes and credited amounts back into the dashboard."
+          }
+        ],
+        "tags": [
+          "SaaS",
+          "Restaurant Tech",
+          "Food Delivery",
+          "Browser Automation",
+          "AI",
+          "FinTech"
+        ],
+        "images": [
+          {
+            "src": "/assets/case-study/dispute-dine/1.png",
+            "width": 0,
+            "height": 0,
+            "alt": "Dashboard showing real-time analytics: win rates, disputed amounts, recovered revenue, and pending cases across platforms."
+          },
+          {
+            "src": "/assets/case-study/dispute-dine/2.png",
+            "width": 0,
+            "height": 0,
+            "alt": "Dispute template configuration screen for different issue types per platform."
+          },
+          {
+            "src": "/assets/case-study/dispute-dine/3.png",
+            "width": 0,
+            "height": 0,
+            "alt": "Activity feed showing every automation action, disputes raised, and success or failure states."
+          },
+          {
+            "src": "/assets/case-study/dispute-dine/4.png",
+            "width": 0,
+            "height": 0,
+            "alt": "Unified dispute tracking table with customer name, platform, issue reason, status, and amount."
+          }
+        ],
+        "caseStudy": {
+          "title": "Enabled Restaurants Clawback $2K-5K/Month Per Location",
+          "link": "https://www.ionio.ai/case-study/dispute-dine-automatic-fradulent-dispute-refund-ionio"
+        },
+        "blogs": []
+      },
+      {
+        "id": "supplierhq",
+        "title": "SupplierHQ",
+        "logo": "/assets/case-study/supplier-hq/logo.svg",
+        "description": "A SaaS database of high-ticket suppliers and distributors built for an e-commerce coaching program, turning 3-7 minutes of manual research per supplier into a bulk export in minutes. It reached 1,000+ paying users and recovered 3x development costs within the first month.",
+        "features": [
+          {
+            "name": "Supplier Discovery Engine",
+            "description": "A searchable database of thousands of verified suppliers with contact details, product types, price points, margins, and MAP policy status, backed by Redis caching for sub-2-second responses. It replaces hours of Googling with a single interface."
+          },
+          {
+            "name": "Smart Filtering",
+            "description": "Lets users drill down across 700+ product types by distributor, category, country, and date added, with competitive-metric toggles and search-demand sliders. It collapses weeks of niche research into seconds."
+          },
+          {
+            "name": "Distributor Database",
+            "description": "A one-click toggle between Suppliers and Distributors, showing which middlemen aggregate which brands. It surfaces the right distribution partners without duplicated research effort."
+          }
+        ],
+        "tags": [
+          "SaaS",
+          "E-commerce",
+          "Supplier Database",
+          "ReactJS",
+          "Stripe"
+        ],
+        "images": [
+          {
+            "src": "/assets/case-study/supplier-hq/1.jpeg",
+            "width": 0,
+            "height": 0,
+            "alt": "Supplier search command center showing the verified supplier database with filters"
+          },
+          {
+            "src": "/assets/case-study/supplier-hq/2.jpeg",
+            "width": 0,
+            "height": 0,
+            "alt": "Smart filtering interface across 700+ product types with competitive-metric toggles"
+          },
+          {
+            "src": "/assets/case-study/supplier-hq/3.jpeg",
+            "width": 0,
+            "height": 0,
+            "alt": "Distributor database view toggling between suppliers and distributors"
+          },
+          {
+            "src": "/assets/case-study/supplier-hq/4.jpeg",
+            "width": 0,
+            "height": 0,
+            "alt": "Category search browsing 29 high-ticket niche categories"
+          }
+        ],
+        "caseStudy": {
+          "title": "From Idea to 1,000+ Paying Users In 8 Weeks",
+          "link": "https://www.ionio.ai/case-study/supplierhq-automatic-supplier-research-engine-ionio"
+        },
+        "blogs": []
+      }
+    ]
+  }
+]
