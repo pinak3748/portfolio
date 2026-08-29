@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-import { type CSSProperties, useState } from "react";
 import { SectionHeading } from "@/components/section-heading";
 import { staggerStyle } from "@/lib/fade-in";
 import { MOBILE_LAB_INITIAL_VISIBLE, type MobileApp } from "@/lib/mobile-apps";
+import Image from "next/image";
+import Link from "next/link";
+import { type CSSProperties, useState } from "react";
 
 function AppTile({
   app,
@@ -16,7 +16,7 @@ function AppTile({
 }) {
   return (
     <Link
-      href={`/mobile/${app.id}`}
+      href={app.appStoreUrl}
       className={`mobile-lab-tile group flex aspect-square flex-col items-center justify-center gap-2.5 no-underline transition-colors duration-160 ease-[var(--ease-out)] hover:bg-gray-100 focus-visible:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-gray-1200${staggerIndex !== undefined ? " fade-in-item" : ""}`}
       style={
         staggerIndex !== undefined ? staggerStyle(staggerIndex) : undefined
