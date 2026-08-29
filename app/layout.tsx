@@ -1,6 +1,7 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import { rootMetadata } from "@/lib/metadata";
 import "./globals.css";
 
@@ -27,6 +28,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         {children}
         <SpeedInsights />
+        <Script
+          src="https://datafa.st/js/script.js"
+          data-website-id="dfid_mFiVtI2lOr6mNJg55ftVl"
+          data-domain="portfolio-two-gules-prrtu94n9h.vercel.app"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
