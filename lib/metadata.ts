@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { getSiteUrl } from "@/lib/site";
 
 export const SITE_NAME = "Pinak Faldu";
+export const DEFAULT_TITLE =
+  "Pinak Faldu — Product Designer and Engineer for SaaS";
 export const DEFAULT_DESCRIPTION =
-  "Product designer and engineer building SaaS platforms, mobile apps, and AI-powered tools. Work, experiments, and writing from Pinak Faldu.";
+  "Product designer and engineer building SaaS, mobile apps, and AI-powered tools. Selected work, experiments, and writing.";
 
 export function absoluteUrl(path: string): string {
   if (path.startsWith("http")) return path;
@@ -28,9 +30,10 @@ export function createPageMetadata({
 }: PageMetadataOptions): Metadata {
   const url = absoluteUrl(path);
   const ogImage = image ? absoluteUrl(image) : undefined;
+  const isHome = path === "/";
 
   return {
-    title,
+    title: isHome ? { absolute: title } : title,
     description,
     alternates: {
       canonical: url,
@@ -54,13 +57,12 @@ export function createPageMetadata({
 
 export function rootMetadata(): Metadata {
   const url = absoluteUrl("/");
-  const title = "Pinak Faldu";
 
   return {
     metadataBase: new URL(getSiteUrl()),
     title: {
-      default: title,
-      template: "%s",
+      default: DEFAULT_TITLE,
+      template: "%s — Pinak Faldu",
     },
     description: DEFAULT_DESCRIPTION,
     icons: {
@@ -73,7 +75,7 @@ export function rootMetadata(): Metadata {
     },
     manifest: "/site.webmanifest",
     openGraph: {
-      title,
+      title: DEFAULT_TITLE,
       description: DEFAULT_DESCRIPTION,
       url,
       siteName: SITE_NAME,
@@ -82,7 +84,7 @@ export function rootMetadata(): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: DEFAULT_TITLE,
       description: DEFAULT_DESCRIPTION,
     },
   };

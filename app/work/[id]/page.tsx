@@ -34,7 +34,7 @@ export async function generateMetadata({
   const ogImage = project.images[0]?.src ?? project.logo;
 
   return createPageMetadata({
-    title: `${project.title} Pinak Faldu`,
+    title: project.title,
     description: project.description,
     path: `/work/${project.id}`,
     image: ogImage,

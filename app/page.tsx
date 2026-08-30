@@ -7,7 +7,12 @@ import { ProductDesign } from "@/components/product-design";
 import { SiteFooter } from "@/components/site-footer";
 import { SocialBadge } from "@/components/social-badge";
 import { TooltipAnchor } from "@/components/tooltip-anchor";
-import { absoluteUrl, createPageMetadata } from "@/lib/metadata";
+import {
+  absoluteUrl,
+  createPageMetadata,
+  DEFAULT_DESCRIPTION,
+  DEFAULT_TITLE,
+} from "@/lib/metadata";
 import { getPersonal } from "@/lib/personal";
 
 const WorkTree = dynamic(() =>
@@ -32,9 +37,8 @@ import { getMobileApps, getMobileLabStaggerItemCount } from "@/lib/mobile-apps";
 import { getBuiltListStaggerItemCount, getProjects } from "@/lib/projects";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Pinak Faldu",
-  description:
-    "Product designer and engineer building SaaS platforms, mobile apps, and AI-powered tools. Selected work, mobile lab, and writing.",
+  title: DEFAULT_TITLE,
+  description: DEFAULT_DESCRIPTION,
   path: "/",
 });
 

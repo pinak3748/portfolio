@@ -31,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Script
           src="https://datafa.st/js/script.js"
           data-website-id="dfid_mFiVtI2lOr6mNJg55ftVl"
-          data-domain="portfolio-two-gules-prrtu94n9h.vercel.app"
+          data-domain="www.pifa.studio"
           strategy="afterInteractive"
         />
       </body>

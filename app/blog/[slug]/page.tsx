@@ -23,7 +23,7 @@ export async function generateMetadata({
   if (!post) return {};
 
   return createPageMetadata({
-    title: `${post.title} Pinak Faldu`,
+    title: post.title,
     description: post.description ?? post.title,
     path: `/blog/${slug}`,
     type: "article",
