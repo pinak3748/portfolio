@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { getSiteUrl } from "@/lib/site";
 
-export const SITE_NAME = "Pinak Faldu";
-export const DEFAULT_TITLE =
-  "Pinak Faldu — Product Designer and Engineer for SaaS";
+export const SITE_NAME = "pifa";
+export const DEFAULT_TITLE = "pifa";
 export const DEFAULT_DESCRIPTION =
   "Product designer and engineer building SaaS, mobile apps, and AI-powered tools. Selected work, experiments, and writing.";
 
@@ -62,7 +61,7 @@ export function rootMetadata(): Metadata {
     metadataBase: new URL(getSiteUrl()),
     title: {
       default: DEFAULT_TITLE,
-      template: "%s — Pinak Faldu",
+      template: "%s",
     },
     description: DEFAULT_DESCRIPTION,
     icons: {
