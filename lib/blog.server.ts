@@ -74,13 +74,3 @@ export function getBlogPost(slug: string): BlogPost | undefined {
     content,
   };
 }
-
-export function getBlogPostImage(slug: string): string | undefined {
-  const filePath = path.join(BLOG_DIR, `${slug}${BLOG_EXTENSION}`);
-  if (!fs.existsSync(filePath)) return undefined;
-
-  const raw = fs.readFileSync(filePath, "utf8");
-  const { data } = matter(raw);
-
-  return parseString(data.image);
-}

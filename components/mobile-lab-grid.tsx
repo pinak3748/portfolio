@@ -17,7 +17,7 @@ function AppTile({
   return (
     <Link
       href={app.appStoreUrl}
-      className={`mobile-lab-tile group flex aspect-square flex-col items-center justify-center gap-2.5 no-underline transition-colors duration-160 ease-[var(--ease-out)] hover:bg-gray-100 focus-visible:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-gray-1200${staggerIndex !== undefined ? " fade-in-item" : ""}`}
+      className={`mobile-lab-tile group flex aspect-square flex-col items-center justify-center gap-2.5 no-underline transition-colors duration-160 ease-[var(--ease-out)] hover:bg-gray-100 focus-visible:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-gray-1200 ${staggerIndex !== undefined ? " fade-in-item" : ""}`}
       style={
         staggerIndex !== undefined ? staggerStyle(staggerIndex) : undefined
       }

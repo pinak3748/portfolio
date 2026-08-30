@@ -1,12 +1,14 @@
-import { WritingCode } from "@/components/activity-graph";
-import { JsonLd } from "@/components/json-ld";
-import { ProductDesign } from "@/components/product-design";
-import { SocialBadge } from "@/components/social-badge";
-import { TooltipAnchor } from "@/components/tooltip-anchor";
-import { absoluteUrl, createPageMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import { WritingCode } from "@/components/activity-graph";
+import { JsonLd } from "@/components/json-ld";
+import { ProductDesign } from "@/components/product-design";
+import { SiteFooter } from "@/components/site-footer";
+import { SocialBadge } from "@/components/social-badge";
+import { TooltipAnchor } from "@/components/tooltip-anchor";
+import { absoluteUrl, createPageMetadata } from "@/lib/metadata";
+import { getPersonal } from "@/lib/personal";
 
 const WorkTree = dynamic(() =>
   import("@/components/work-tree").then((m) => ({ default: m.WorkTree })),
@@ -76,6 +78,7 @@ export default function Home() {
   const mobileApps = getMobileApps();
   const projects = getProjects();
   const blogPosts = getBlogPosts();
+  const personal = getPersonal();
   const mobileLabStaggerOffset = 5 + getWorkStaggerItemCount(work);
   const builtStaggerOffset =
     mobileLabStaggerOffset + getMobileLabStaggerItemCount();
@@ -189,6 +192,8 @@ export default function Home() {
         />
 
         <BlogList posts={blogPosts} staggerOffset={blogStaggerOffset} />
+
+        <SiteFooter personal={personal} />
       </main>
     </>
   );

@@ -1,10 +1,9 @@
-import { getSiteUrl } from "@/lib/site";
 import type { Metadata } from "next";
+import { getSiteUrl } from "@/lib/site";
 
 export const SITE_NAME = "Pinak Faldu";
 export const DEFAULT_DESCRIPTION =
   "Product designer and engineer building SaaS platforms, mobile apps, and AI-powered tools. Work, experiments, and writing from Pinak Faldu.";
-export const DEFAULT_OG_IMAGE = "/assets/personal.png";
 
 export function absoluteUrl(path: string): string {
   if (path.startsWith("http")) return path;
@@ -24,11 +23,11 @@ export function createPageMetadata({
   title,
   description,
   path,
-  image = DEFAULT_OG_IMAGE,
+  image,
   type = "website",
 }: PageMetadataOptions): Metadata {
   const url = absoluteUrl(path);
-  const ogImage = absoluteUrl(image);
+  const ogImage = image ? absoluteUrl(image) : undefined;
 
   return {
     title,
@@ -42,20 +41,19 @@ export function createPageMetadata({
       url,
       siteName: SITE_NAME,
       type,
-      images: [{ url: ogImage, alt: title }],
+      ...(ogImage ? { images: [{ url: ogImage, alt: title }] } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [ogImage],
+      ...(ogImage ? { images: [ogImage] } : {}),
     },
   };
 }
 
 export function rootMetadata(): Metadata {
   const url = absoluteUrl("/");
-  const ogImage = absoluteUrl(DEFAULT_OG_IMAGE);
   const title = "Pinak Faldu";
 
   return {
@@ -65,6 +63,15 @@ export function rootMetadata(): Metadata {
       template: "%s",
     },
     description: DEFAULT_DESCRIPTION,
+    icons: {
+      icon: [
+        { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+        { url: "/favicon.svg", type: "image/svg+xml" },
+      ],
+      shortcut: "/favicon.ico",
+      apple: "/apple-touch-icon.png",
+    },
+    manifest: "/site.webmanifest",
     openGraph: {
       title,
       description: DEFAULT_DESCRIPTION,
@@ -72,13 +79,11 @@ export function rootMetadata(): Metadata {
       siteName: SITE_NAME,
       type: "website",
       locale: "en_US",
-      images: [{ url: ogImage, alt: SITE_NAME }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: DEFAULT_DESCRIPTION,
-      images: [ogImage],
     },
   };
 }

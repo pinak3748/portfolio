@@ -1,13 +1,13 @@
-import { BlogProse } from "@/components/blog-prose";
-import { JsonLd } from "@/components/json-ld";
-import { formatBlogDate } from "@/lib/blog-types";
-import { getBlogPost, getBlogPostImage, getBlogPosts } from "@/lib/blog.server";
-import { tagTone } from "@/lib/case-studies";
-import { createStaggerCounter } from "@/lib/fade-in";
-import { absoluteUrl, createPageMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BlogProse } from "@/components/blog-prose";
+import { JsonLd } from "@/components/json-ld";
+import { getBlogPost, getBlogPosts } from "@/lib/blog.server";
+import { formatBlogDate } from "@/lib/blog-types";
+import { tagTone } from "@/lib/case-studies";
+import { createStaggerCounter } from "@/lib/fade-in";
+import { absoluteUrl, createPageMetadata } from "@/lib/metadata";
 
 export function generateStaticParams() {
   return getBlogPosts().map((post) => ({ slug: post.slug }));
@@ -22,13 +22,10 @@ export async function generateMetadata({
   const post = getBlogPost(slug);
   if (!post) return {};
 
-  const image = getBlogPostImage(slug);
-
   return createPageMetadata({
     title: `${post.title} Pinak Faldu`,
     description: post.description ?? post.title,
     path: `/blog/${slug}`,
-    image,
     type: "article",
   });
 }
@@ -45,7 +42,7 @@ export default async function BlogPostPage({
 
   const stagger = createStaggerCounter();
   const url = absoluteUrl(`/blog/${slug}`);
-  const image = getBlogPostImage(slug);
+  const image = absoluteUrl(`/blog/${slug}/opengraph-image`);
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -64,7 +61,7 @@ export default async function BlogPostPage({
       name: "Pinak Faldu",
       url: absoluteUrl("/"),
     },
-    ...(image ? { image: absoluteUrl(image) } : {}),
+    image,
   };
 
   return (
@@ -79,23 +76,23 @@ export default async function BlogPostPage({
           Home
         </Link>
 
-        <header className="fade-in-item mb-8" style={stagger.next()}>
+        <header className="fade-in-item mb-6" style={stagger.next()}>
           {post.date ? (
             <time
               dateTime={post.date}
-              className="mb-2 block text-[0.8125rem] leading-relaxed text-gray-1000 tabular-nums"
+              className="mb-3 block text-[0.8125rem] leading-relaxed text-gray-1000 tabular-nums"
             >
               {formatBlogDate(post.date)}
             </time>
           ) : null}
-          <h1 className="font-medium text-gray-1200 leading-snug text-pretty">
-            {post.title}
-          </h1>
-          {post.description ? (
-            <p className="mt-2 text-gray-1100 leading-relaxed text-pretty">
-              {post.description}
-            </p>
-          ) : null}
+          <div className="flex flex-col">
+            <h1 className="font-medium text-gray-1200 leading-snug">
+              {post.title}
+            </h1>
+            {post.description ? (
+              <p className="text-gray-1100 leading-snug">{post.description}</p>
+            ) : null}
+          </div>
           {post.tags && post.tags.length > 0 ? (
             <ul className="mt-3 flex flex-wrap gap-1.5 p-0 list-none">
               {post.tags.map((tag) => (
