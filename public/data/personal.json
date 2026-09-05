@@ -4,6 +4,10 @@
   "country": "INDIA",
   "links": [
     {
+      "name": "References",
+      "url": "/references"
+    },
+    {
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/pinakfaldu/"
     },

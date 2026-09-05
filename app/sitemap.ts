@@ -38,6 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    {
+      url: `${base}/references`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
     ...workEntries,
     ...mobileEntries,
     ...blogEntries,

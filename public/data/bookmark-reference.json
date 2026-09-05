@@ -1,0 +1,900 @@
+{
+  "meta": {
+    "title": "Design & Development References",
+    "description": "A personal collection of UI, design, motion, frontend, and product references.",
+    "version": 1,
+    "categories": [
+      "Components",
+      "Inspiration",
+      "Motion",
+      "Tools",
+      "Design Systems",
+      "Resources",
+      "Private"
+    ]
+  },
+  "items": [
+    {
+      "id": "transitions-skill",
+      "name": "Transitions.dev Skill",
+      "description": "Motion recipes and an AI skill for building polished product transitions.",
+      "category": "Motion",
+      "url": "https://transitions.dev/skill.html",
+      "favicon": "https://www.google.com/s2/favicons?domain=transitions.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "cuelume",
+      "name": "Cuelume",
+      "description": "A tiny dependency-free library for interaction sounds built with Web Audio.",
+      "category": "Components",
+      "url": "https://cuelume.dev/",
+      "favicon": "https://www.google.com/s2/favicons?domain=cuelume.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "beui",
+      "name": "Beautiful UI",
+      "description": "A curated collection of polished UI components and interface patterns.",
+      "category": "Components",
+      "url": "https://beui.dev/",
+      "favicon": "https://www.google.com/s2/favicons?domain=beui.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "great-ui",
+      "name": "Great UI",
+      "description": "Open-source React and Tailwind components focused on premium interfaces and motion.",
+      "category": "Components",
+      "url": "https://www.great-ui.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=great-ui.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "ui-fonts",
+      "name": "UI Fonts",
+      "description": "A collection of fonts selected for building modern digital interfaces.",
+      "category": "Resources",
+      "url": "https://www.uifonts.app/",
+      "favicon": "https://www.google.com/s2/favicons?domain=uifonts.app&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "shieldcn",
+      "name": "Shieldcn",
+      "description": "shadcn-styled SVG badges for GitHub, npm, docs, and project pages.",
+      "category": "Tools",
+      "url": "https://shieldcn.dev/",
+      "favicon": "https://www.google.com/s2/favicons?domain=shieldcn.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "dither-kit",
+      "name": "Dither Kit",
+      "description": "Dithered charts, avatars, buttons, and gradients for shadcn projects.",
+      "category": "Components",
+      "url": "https://www.tripwire.sh/dither-kit",
+      "favicon": "https://www.google.com/s2/favicons?domain=tripwire.sh&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "its-hover",
+      "name": "Its Hover",
+      "description": "Copy-paste animated icons designed to add motion to everyday UI actions.",
+      "category": "Components",
+      "url": "https://www.itshover.com/icons",
+      "favicon": "https://www.google.com/s2/favicons?domain=itshover.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "design-md",
+      "name": "Design MD",
+      "description": "Reusable DESIGN.md files that give AI coding agents a visual design system to follow.",
+      "category": "Design Systems",
+      "url": "https://getdesign.md/design-md",
+      "favicon": "https://www.google.com/s2/favicons?domain=getdesign.md&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "dot-matrix",
+      "name": "Dot Matrix",
+      "description": "A React library of expressive dot-matrix loaders and loading primitives.",
+      "category": "Components",
+      "url": "https://dotmatrix.zzzzshawn.cloud/",
+      "favicon": "https://www.google.com/s2/favicons?domain=dotmatrix.zzzzshawn.cloud&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "ascii-magic",
+      "name": "ASCII Magic",
+      "description": "Browser-based image and video effects for ASCII, pixel, dither, mosaic, and glitch styles.",
+      "category": "Tools",
+      "url": "https://www.ascii-magic.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=ascii-magic.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "shoogle",
+      "name": "Shoogle",
+      "description": "A playful web experiment and interaction reference worth exploring for visual ideas.",
+      "category": "Inspiration",
+      "url": "https://shoogle.dev/",
+      "favicon": "https://www.google.com/s2/favicons?domain=shoogle.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "agentation",
+      "name": "Agentation",
+      "description": "Annotate live interfaces and turn visual feedback into structured context for coding agents.",
+      "category": "Tools",
+      "url": "https://www.agentation.com/features",
+      "favicon": "https://www.google.com/s2/favicons?domain=agentation.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "desengs",
+      "name": "DesEngs",
+      "description": "A curated resource hub for design engineers covering tools, reading, inspiration, and builds.",
+      "category": "Resources",
+      "url": "https://desengs.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=desengs.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "svgl-auth",
+      "name": "SVGL Authentication",
+      "description": "SVG logo references for authentication products and developer services.",
+      "category": "Resources",
+      "url": "https://svgl.app/directory/authentication",
+      "favicon": "https://www.google.com/s2/favicons?domain=svgl.app&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "saaspo",
+      "name": "SaaSFrame / SaaSpo",
+      "description": "A curated gallery of SaaS interfaces, landing pages, and product inspiration.",
+      "category": "Inspiration",
+      "url": "https://saaspo.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=saaspo.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "screenshot-studio",
+      "name": "Screenshot Studio",
+      "description": "Create polished product screenshots and visuals for apps, websites, and marketing.",
+      "category": "Tools",
+      "url": "https://www.screenshot-studio.com/landing",
+      "favicon": "https://www.google.com/s2/favicons?domain=screenshot-studio.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "evilcharts",
+      "name": "Evil Charts",
+      "description": "Experimental chart components with a strong visual style for modern web interfaces.",
+      "category": "Components",
+      "url": "https://evilcharts.com/docs",
+      "favicon": "https://www.google.com/s2/favicons?domain=evilcharts.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "alignui",
+      "name": "Align UI",
+      "description": "A collection of accessible React and Tailwind UI components for product interfaces.",
+      "category": "Components",
+      "url": "https://www.alignui.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=alignui.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "component-gallery",
+      "name": "Component Gallery",
+      "description": "A catalog for comparing UI components and how different design systems implement them.",
+      "category": "Resources",
+      "url": "https://component.gallery/",
+      "favicon": "https://www.google.com/s2/favicons?domain=component.gallery&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "lucide-animated",
+      "name": "Lucide Animated",
+      "description": "Animated versions of familiar Lucide icons for expressive interface interactions.",
+      "category": "Components",
+      "url": "https://lucide-animated.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=lucide-animated.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "efferd",
+      "name": "Efferd",
+      "description": "A visual web project focused on crafted interactions and digital experimentation.",
+      "category": "Inspiration",
+      "url": "https://efferd.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=efferd.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "tancn",
+      "name": "Tancn",
+      "description": "A personal collection of web experiments, interfaces, and frontend craft.",
+      "category": "Inspiration",
+      "url": "https://tancn.dev/",
+      "favicon": "https://www.google.com/s2/favicons?domain=tancn.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "ultracite",
+      "name": "Ultracite",
+      "description": "A zero-config TypeScript code-quality toolchain for consistent formatting and linting.",
+      "category": "Tools",
+      "url": "https://www.ultracite.ai/",
+      "favicon": "https://www.google.com/s2/favicons?domain=ultracite.ai&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "oxbowui",
+      "name": "Oxbow UI",
+      "description": "A collection of refined UI components and interface building blocks.",
+      "category": "Components",
+      "url": "https://oxbowui.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=oxbowui.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "emilkowalski",
+      "name": "Emil Kowalski",
+      "description": "A design and frontend resource focused on interaction, motion, and interface craft.",
+      "category": "Resources",
+      "url": "https://emilkowal.ski/",
+      "favicon": "https://www.google.com/s2/favicons?domain=emilkowal.ski&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "tinte",
+      "name": "Tinte",
+      "description": "A tool for creating and exploring color themes and design tokens.",
+      "category": "Tools",
+      "url": "https://www.tinte.dev/",
+      "favicon": "https://www.google.com/s2/favicons?domain=tinte.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "grainient",
+      "name": "Grainient",
+      "description": "A generator for grainy, textured gradients and atmospheric visual backgrounds.",
+      "category": "Tools",
+      "url": "https://grainient.supply/",
+      "favicon": "https://www.google.com/s2/favicons?domain=grainient.supply&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "lisere",
+      "name": "Lisere",
+      "description": "A collection of refined visual experiments and generative design work.",
+      "category": "Inspiration",
+      "url": "https://lisere.ankur.design/",
+      "favicon": "https://www.google.com/s2/favicons?domain=lisere.ankur.design&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "aceternity",
+      "name": "Aceternity UI",
+      "description": "Animated React and Tailwind components for visually rich landing pages and products.",
+      "category": "Components",
+      "url": "https://ui.aceternity.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=ui.aceternity.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "prompt-kit",
+      "name": "Prompt Kit",
+      "description": "Reusable UI components for building polished AI and prompt-based interfaces.",
+      "category": "Components",
+      "url": "https://www.prompt-kit.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=prompt-kit.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "coss-ui",
+      "name": "COSS UI",
+      "description": "A modern component system for building clean, accessible React interfaces.",
+      "category": "Components",
+      "url": "https://coss.com/ui",
+      "favicon": "https://www.google.com/s2/favicons?domain=coss.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "neobrutalism",
+      "name": "Neobrutalism Components",
+      "description": "Bold, high-contrast UI components inspired by the neobrutalist design style.",
+      "category": "Components",
+      "url": "https://www.neobrutalism.dev/",
+      "favicon": "https://www.google.com/s2/favicons?domain=neobrutalism.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "incredibles",
+      "name": "Incredibles",
+      "description": "A collection of creative frontend components and interaction experiments.",
+      "category": "Components",
+      "url": "https://incredibles.dev/",
+      "favicon": "https://www.google.com/s2/favicons?domain=incredibles.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "sprrrint",
+      "name": "Sprrrint Figma Components",
+      "description": "A browsable library of Figma components and design resources.",
+      "category": "Components",
+      "url": "https://sprrrint.com/figma/components/all",
+      "favicon": "https://www.google.com/s2/favicons?domain=sprrrint.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "sales-pipeline",
+      "name": "Sales Pipeline",
+      "description": "A detailed interface case study exploring a sales pipeline product experience.",
+      "category": "Inspiration",
+      "url": "https://kichigin.studio/projects/sales-pipeline",
+      "favicon": "https://www.google.com/s2/favicons?domain=kichigin.studio&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "magic-motion",
+      "name": "Magic Motion",
+      "description": "A visual playground for exploring motion and animation techniques on the web.",
+      "category": "Motion",
+      "url": "https://www.nan.fyi/magic-motion",
+      "favicon": "https://www.google.com/s2/favicons?domain=nan.fyi&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "google-play-console",
+      "name": "Google Play Console Listing",
+      "description": "Private app-store listing workspace for managing a Google Play product.",
+      "category": "Private",
+      "url": "https://play.google.com/console/u/2/developers/6470157384391905559/app/4972272622408425017/main-store-listing",
+      "favicon": "https://www.google.com/s2/favicons?domain=play.google.com&sz=64",
+      "visibility": "private"
+    },
+    {
+      "id": "vercel-guidelines",
+      "name": "Vercel Design Guidelines",
+      "description": "Principles and patterns for designing consistent, high-quality product interfaces.",
+      "category": "Design Systems",
+      "url": "https://vercel.com/design/guidelines",
+      "favicon": "https://www.google.com/s2/favicons?domain=vercel.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "playerzero",
+      "name": "PlayerZero",
+      "description": "A curated website reference showcasing the PlayerZero product experience.",
+      "category": "Inspiration",
+      "url": "https://land-book.com/websites/85825-playerzero",
+      "favicon": "https://www.google.com/s2/favicons?domain=land-book.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "trigger-pricing",
+      "name": "Trigger.dev Pricing",
+      "description": "Pricing page reference for an infrastructure and background-jobs developer platform.",
+      "category": "Inspiration",
+      "url": "https://trigger.dev/pricing",
+      "favicon": "https://www.google.com/s2/favicons?domain=trigger.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "userjot",
+      "name": "UserJot",
+      "description": "Lightweight product feedback and feature-request collection for SaaS teams.",
+      "category": "Tools",
+      "url": "https://userjot.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=userjot.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "tembo",
+      "name": "Tembo",
+      "description": "A developer platform for building and deploying Postgres-based applications.",
+      "category": "Tools",
+      "url": "https://www.tembo.io/",
+      "favicon": "https://www.google.com/s2/favicons?domain=tembo.io&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "design-system-checklist",
+      "name": "Design System Checklist",
+      "description": "A practical checklist for reviewing and improving design systems.",
+      "category": "Design Systems",
+      "url": "https://www.designsystemchecklist.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=designsystemchecklist.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "helpy-ui-tools",
+      "name": "Helpy UI Tools",
+      "description": "Small UI utilities and tools for creating polished interface effects.",
+      "category": "Tools",
+      "url": "https://helpy-ui.com/tools",
+      "favicon": "https://www.google.com/s2/favicons?domain=helpy-ui.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "ios-app-icons",
+      "name": "Curated iOS App Icons",
+      "description": "A large collection of iOS app icons for visual and product-design inspiration.",
+      "category": "Inspiration",
+      "url": "https://toolfolio.io/blog/explore-curated-ios-app-icons-with-thousands-of-designs-for-inspiration",
+      "favicon": "https://www.google.com/s2/favicons?domain=toolfolio.io&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "h1-gallery",
+      "name": "H1 Gallery",
+      "description": "A gallery of landing-page headlines and hero copy for inspiration.",
+      "category": "Inspiration",
+      "url": "https://h1gallery.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=h1gallery.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "akiflow-founders",
+      "name": "Akiflow Founders",
+      "description": "A founder-focused page showing the Akiflow product and brand experience.",
+      "category": "Inspiration",
+      "url": "https://akiflow.com/founders",
+      "favicon": "https://www.google.com/s2/favicons?domain=akiflow.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "effect-institute",
+      "name": "Effect Institute",
+      "description": "A chapter-based resource exploring design, effects, and creative frontend techniques.",
+      "category": "Resources",
+      "url": "https://www.effect.institute/chapters/intro",
+      "favicon": "https://www.google.com/s2/favicons?domain=effect.institute&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "peerlist-scroll",
+      "name": "Peerlist Scroll",
+      "description": "A scroll-focused product and interaction reference from Peerlist.",
+      "category": "Motion",
+      "url": "https://peerlist.io/scroll",
+      "favicon": "https://www.google.com/s2/favicons?domain=peerlist.io&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "local-punch-list",
+      "name": "Punch List",
+      "description": "Private local project workspace for reviewing jobs, punch lists, and schedules.",
+      "category": "Private",
+      "url": "http://localhost:3000/job-site/5e3a017d-66f7-478a-9439-cd2492871420/punch-lists?view=list&page=2&ganttView=weekly",
+      "favicon": "https://www.google.com/s2/favicons?domain=localhost:3000&sz=64",
+      "visibility": "private"
+    },
+    {
+      "id": "gitbook",
+      "name": "GitBook",
+      "description": "A platform for creating and publishing structured product and developer documentation.",
+      "category": "Resources",
+      "url": "https://www.gitbook.com/?ref=saaspo.com",
+      "favicon": "https://www.google.com/s2/favicons?domain=gitbook.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "kartikk",
+      "name": "Kartikk",
+      "description": "A personal portfolio and collection of frontend, design, and engineering work.",
+      "category": "Inspiration",
+      "url": "https://www.kartikk.tech/",
+      "favicon": "https://www.google.com/s2/favicons?domain=kartikk.tech&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "mesh-gradients",
+      "name": "Mesh Gradients",
+      "description": "A generator for creating soft mesh-gradient backgrounds and visual effects.",
+      "category": "Tools",
+      "url": "https://tools.ui-layouts.com/mesh-gradients",
+      "favicon": "https://www.google.com/s2/favicons?domain=tools.ui-layouts.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "mockdown",
+      "name": "Mockdown",
+      "description": "A tool and visual resource for creating polished product mockups and presentation assets.",
+      "category": "Tools",
+      "url": "https://www.mockdown.design/",
+      "favicon": "https://www.google.com/s2/favicons?domain=mockdown.design&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "lue",
+      "name": "Lue Studio",
+      "description": "A studio portfolio showcasing crafted digital experiences and visual work.",
+      "category": "Inspiration",
+      "url": "https://lue.studio/works",
+      "favicon": "https://www.google.com/s2/favicons?domain=lue.studio&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "bazza-craft",
+      "name": "Bazza Craft",
+      "description": "A collection of frontend experiments, craft notes, and interface work.",
+      "category": "Inspiration",
+      "url": "https://bazza.dev/craft",
+      "favicon": "https://www.google.com/s2/favicons?domain=bazza.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "growthloop-snowflake",
+      "name": "GrowthLoop Snowflake",
+      "description": "Reference for connecting warehouse data with marketing audiences and journeys.",
+      "category": "Resources",
+      "url": "https://www.growthloop.com/sources/snowflake",
+      "favicon": "https://www.google.com/s2/favicons?domain=growthloop.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "jakub",
+      "name": "Jakub Antalik",
+      "description": "A design engineer portfolio featuring interactive experiments, tools, and visual work.",
+      "category": "Inspiration",
+      "url": "https://jakub.kr/",
+      "favicon": "https://www.google.com/s2/favicons?domain=jakub.kr&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "kevn",
+      "name": "Kevn",
+      "description": "A personal portfolio exploring product design, frontend, and digital craft.",
+      "category": "Inspiration",
+      "url": "https://kevn.co/",
+      "favicon": "https://www.google.com/s2/favicons?domain=kevn.co&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "good-vs-great-animation",
+      "name": "Good vs Great Animations",
+      "description": "A practical breakdown of what makes interface animation feel intentional and polished.",
+      "category": "Motion",
+      "url": "https://emilkowal.ski/ui/good-vs-great-animations",
+      "favicon": "https://www.google.com/s2/favicons?domain=emilkowal.ski&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "stylessh",
+      "name": "Styles.sh",
+      "description": "A resource for exploring and experimenting with CSS styles and visual effects.",
+      "category": "Tools",
+      "url": "https://stylessh.dev/",
+      "favicon": "https://www.google.com/s2/favicons?domain=stylessh.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "save-design",
+      "name": "Save Design",
+      "description": "A curated place to save and discover useful design references.",
+      "category": "Inspiration",
+      "url": "https://save.design/",
+      "favicon": "https://www.google.com/s2/favicons?domain=save.design&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "diff-kit",
+      "name": "Diff Kit",
+      "description": "A toolkit for visually comparing and inspecting changes in interfaces or content.",
+      "category": "Tools",
+      "url": "https://diff-kit.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=diff-kit.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "dead-simple-sites",
+      "name": "Dead Simple Sites",
+      "description": "A gallery celebrating simple, focused, and minimal websites.",
+      "category": "Inspiration",
+      "url": "https://deadsimplesites.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=deadsimplesites.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "runey",
+      "name": "Runey",
+      "description": "A creative web project showcasing playful interactions and visual experiments.",
+      "category": "Inspiration",
+      "url": "https://runey.app/",
+      "favicon": "https://www.google.com/s2/favicons?domain=runey.app&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "best-designs-on-x",
+      "name": "Best Designs on X",
+      "description": "A curated feed of notable design work shared on X.",
+      "category": "Inspiration",
+      "url": "https://bestdesignsonx.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=bestdesignsonx.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "t-shortlink",
+      "name": "Shortlink Reference",
+      "description": "A bookmarked short link preserved as a visual or project reference.",
+      "category": "Inspiration",
+      "url": "https://t.co/M5laJrXX0V",
+      "favicon": "https://www.google.com/s2/favicons?domain=t.co&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "okara",
+      "name": "Okara AI",
+      "description": "An AI product and brand reference with a polished product-focused web experience.",
+      "category": "Inspiration",
+      "url": "https://okara.ai/",
+      "favicon": "https://www.google.com/s2/favicons?domain=okara.ai&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "vihansingh",
+      "name": "Vihan Singh",
+      "description": "A personal portfolio showcasing frontend, product, and design engineering work.",
+      "category": "Inspiration",
+      "url": "https://www.vihansingh.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=vihansingh.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "macfolio",
+      "name": "Macfolio",
+      "description": "A gallery of Mac app interfaces and product-design references.",
+      "category": "Inspiration",
+      "url": "https://macfolio.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=macfolio.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "dualite",
+      "name": "Dualite",
+      "description": "A studio case study exploring the design and product experience of Dualite.",
+      "category": "Inspiration",
+      "url": "https://studiomaydit.com/work/dualite",
+      "favicon": "https://www.google.com/s2/favicons?domain=studiomaydit.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "findly-directories",
+      "name": "Findly Tools Directories",
+      "description": "A directory of useful tools organized by category for discovering new resources.",
+      "category": "Resources",
+      "url": "https://findly.tools/categories/directories",
+      "favicon": "https://www.google.com/s2/favicons?domain=findly.tools&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "rauno-craft",
+      "name": "Rauno Craft",
+      "description": "Practical notes and principles about interface design, frontend craft, and product details.",
+      "category": "Resources",
+      "url": "https://rauno.me/craft",
+      "favicon": "https://www.google.com/s2/favicons?domain=rauno.me&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "devsignal",
+      "name": "DevSignal",
+      "description": "A developer-focused resource and portfolio site centered on engineering and product work.",
+      "category": "Resources",
+      "url": "https://www.devsignal.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=devsignal.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "hihobbes",
+      "name": "Hi Hobbes",
+      "description": "A personal creative portfolio with playful visual and interaction references.",
+      "category": "Inspiration",
+      "url": "https://www.hihobbes.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=hihobbes.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "oreo-avatar",
+      "name": "Oreo Design Avatar",
+      "description": "A playful avatar generator and visual experiment.",
+      "category": "Tools",
+      "url": "https://oreo-design-avatar.vercel.app/",
+      "favicon": "https://www.google.com/s2/favicons?domain=oreo-design-avatar.vercel.app&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "symbl",
+      "name": "Symbl",
+      "description": "A visual experiment exploring symbols, interfaces, and generative design.",
+      "category": "Inspiration",
+      "url": "https://www.symbl.space/",
+      "favicon": "https://www.google.com/s2/favicons?domain=symbl.space&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "design-engineer-tools",
+      "name": "Design Engineer Tools",
+      "description": "A curated toolbox covering inspiration, AI coding, components, and web utilities.",
+      "category": "Resources",
+      "url": "https://designengineer.tools/",
+      "favicon": "https://www.google.com/s2/favicons?domain=designengineer.tools&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "orbs",
+      "name": "Orbs",
+      "description": "An interactive generative visual experiment by Jakub Antalik.",
+      "category": "Inspiration",
+      "url": "https://orbs.jakubantalik.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=orbs.jakubantalik.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "remocn",
+      "name": "Remocn",
+      "description": "A collection of reusable UI components and frontend patterns.",
+      "category": "Components",
+      "url": "https://remocn.dev/?ref=justinlevine.me",
+      "favicon": "https://www.google.com/s2/favicons?domain=remocn.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "writer-computer",
+      "name": "Writer Computer",
+      "description": "A minimalist writing-focused web experience and interface reference.",
+      "category": "Inspiration",
+      "url": "https://writer.computer/",
+      "favicon": "https://www.google.com/s2/favicons?domain=writer.computer&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "internet-designs",
+      "name": "The Internet Designs",
+      "description": "A curated collection of interesting websites and internet-native design references.",
+      "category": "Inspiration",
+      "url": "https://www.theinternetdesigns.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=theinternetdesigns.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "inspora",
+      "name": "Inspora",
+      "description": "A curated visual inspiration feed covering web, branding, product, motion, and more.",
+      "category": "Inspiration",
+      "url": "https://www.inspora.design/",
+      "favicon": "https://www.google.com/s2/favicons?domain=inspora.design&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "metalforge",
+      "name": "Metalforge",
+      "description": "A visual editor for creating animated gradients, glow, dots, grain, and other effects.",
+      "category": "Tools",
+      "url": "https://metalforge.xyz/editor#effect=spike-purple&scope=gradient&style=purple&anim=wave&animSpeed=1&animAmount=1&animSpread=1&waveFreq=2&lightSway=0.35&glowPulse=0.25&card=0.87%2C0.4&radius=38&borderAmt=0.11&light=0.5%2C1&intensity=1&mound1Blur=26&mound2Blur=18&glowAmt=1&baseGlow=1&dotStyle=dots&dotLayer=overlay&dotSpacing=12&dotSize=0.8&dotAmt=0.45&dotAngle=0&dotVary=0&dotMotion=still&dotSpeed=1.6&dotDepth=0.85&dotColor=%23FFFFFF&bgColor=%23040406&mound1Color=%233B1FE0&mound2Color=%238A6BFF&poolTint=%23C8BCFF&borderColor=%23FFFFFF&shadowAmt=0.1&shadowColor=%238A6BFF&filter=none&fAmount=0.5&fScale=5&fBlur=8&fFade=0.45&fSoft=0.5&fAngle=0&fGrain=16&fBrightness=0&fContrast=1&fSaturation=1&fRound=0.45&fBevel=0.3&fInset=0.08",
+      "favicon": "https://www.google.com/s2/favicons?domain=metalforge.xyz&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "macapp-supply",
+      "name": "Mac App Supply",
+      "description": "A curated collection of Mac apps and interface references.",
+      "category": "Inspiration",
+      "url": "https://macapp.supply/",
+      "favicon": "https://www.google.com/s2/favicons?domain=macapp.supply&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "super-visuals",
+      "name": "Super Visuals Figma Library",
+      "description": "A Figma library of visual backgrounds, textures, and effects for design exploration.",
+      "category": "Tools",
+      "url": "https://www.figma.com/design/1RjQY50dy7t9SucZtAIb1p/Super-Visuals--Backgrounds-Library.?node-id=3832-2&p=f&t=iLhRqzsMHn0Me415-0",
+      "favicon": "https://www.google.com/s2/favicons?domain=figma.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "interaction-kit",
+      "name": "Interaction Kit",
+      "description": "A collection of reusable interaction patterns and frontend motion experiments.",
+      "category": "Motion",
+      "url": "https://interactionkit.org/#top",
+      "favicon": "https://www.google.com/s2/favicons?domain=interactionkit.org&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "collect-ui",
+      "name": "Collect UI",
+      "description": "A large collection of UI design examples collected for daily inspiration.",
+      "category": "Inspiration",
+      "url": "https://collectui.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=collectui.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "recent-design",
+      "name": "Recent Design",
+      "description": "A curated gallery of recent web and product design work.",
+      "category": "Inspiration",
+      "url": "https://recent.design/",
+      "favicon": "https://www.google.com/s2/favicons?domain=recent.design&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "rare-ui",
+      "name": "Rare UI",
+      "description": "A curated collection of uncommon and high-quality interface references.",
+      "category": "Inspiration",
+      "url": "https://www.rareui.com/",
+      "favicon": "https://www.google.com/s2/favicons?domain=rareui.com&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "valley-pricing",
+      "name": "Valley Pricing",
+      "description": "Pricing-page reference for a modern SaaS product.",
+      "category": "Inspiration",
+      "url": "https://www.joinvalley.co/pricing",
+      "favicon": "https://www.google.com/s2/favicons?domain=joinvalley.co&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "beautiful-ui",
+      "name": "Beautiful UI",
+      "description": "A library of polished UI components and interaction patterns.",
+      "category": "Components",
+      "url": "https://www.beautifului.dev/",
+      "favicon": "https://www.google.com/s2/favicons?domain=beautifului.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "transitions",
+      "name": "Transitions.dev",
+      "description": "A collection of production-ready UI transitions and motion recipes.",
+      "category": "Motion",
+      "url": "https://transitions.dev/",
+      "favicon": "https://www.google.com/s2/favicons?domain=transitions.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "canvas-ui-ascii",
+      "name": "Canvas UI ASCII Object",
+      "description": "A creative component that renders 3D models, SVGs, or images as shape-matched ASCII.",
+      "category": "Components",
+      "url": "https://canvasui.dev/docs/components/ascii-object",
+      "favicon": "https://www.google.com/s2/favicons?domain=canvasui.dev&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "60fps-apps",
+      "name": "60fps",
+      "description": "A library of real interface motion references for studying polished app animations.",
+      "category": "Motion",
+      "url": "https://60fps.design/apps",
+      "favicon": "https://www.google.com/s2/favicons?domain=60fps.design&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "60fps-mcp",
+      "name": "60fps MCP",
+      "description": "An MCP server that lets AI coding tools search motion references and retrieve implementation recipes.",
+      "category": "Tools",
+      "url": "https://60fps.design/mcp",
+      "favicon": "https://www.google.com/s2/favicons?domain=60fps.design&sz=64",
+      "visibility": "public"
+    },
+    {
+      "id": "mikes-cv",
+      "name": "Mike's CV",
+      "description": "A personal portfolio and CV reference with a strong editorial web presentation.",
+      "category": "Inspiration",
+      "url": "https://www.mikes.cv/",
+      "favicon": "https://www.google.com/s2/favicons?domain=mikes.cv&sz=64",
+      "visibility": "public"
+    }
+  ]
+}
