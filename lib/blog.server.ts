@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import "server-only";
+import { getBlogHeadings } from "@/lib/blog-headings";
 import type { BlogPost, BlogPostListing } from "@/lib/blog-types";
 
 const BLOG_DIR = path.join(process.cwd(), "content/blog");
@@ -72,5 +73,6 @@ export function getBlogPost(slug: string): BlogPost | undefined {
   return {
     ...parseListingData(slug, data),
     content,
+    headings: getBlogHeadings(content),
   };
 }

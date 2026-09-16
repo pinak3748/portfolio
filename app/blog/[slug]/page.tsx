@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArticleTableOfContents } from "@/components/article-table-of-contents";
 import { BlogProse } from "@/components/blog-prose";
 import { JsonLd } from "@/components/json-ld";
 import { getBlogPost, getBlogPosts } from "@/lib/blog.server";
@@ -43,6 +44,16 @@ export default async function BlogPostPage({
   const stagger = createStaggerCounter();
   const url = absoluteUrl(`/blog/${slug}`);
   const image = absoluteUrl(`/blog/${slug}/opengraph-image`);
+  const tableOfContentsHeadings =
+    post.headings.length > 0
+      ? post.headings
+      : [
+          {
+            id: "article-introduction",
+            title: "Introduction",
+            level: 2 as const,
+          },
+        ];
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -67,50 +78,53 @@ export default async function BlogPostPage({
   return (
     <>
       <JsonLd data={articleSchema} />
-      <main className="blog-detail mx-auto max-w-173 px-6 py-12 leading-relaxed sm:py-24">
-        <Link
-          href="/"
-          className="fade-in-item mb-8 inline-block text-gray-1000 no-underline hover:text-gray-1200 hover:underline"
-          style={stagger.next()}
-        >
-          Home
-        </Link>
+      <main className="blog-detail">
+        <div className="blog-detail-content mx-auto max-w-173 px-6 py-12 sm:py-24">
+          <Link
+            href="/"
+            className="blog-back fade-in-item inline-block text-gray-1000 no-underline hover:text-gray-1200 hover:underline"
+            style={stagger.next()}
+          >
+            Home
+          </Link>
 
-        <header className="fade-in-item mb-6" style={stagger.next()}>
-          {post.date ? (
-            <time
-              dateTime={post.date}
-              className="mb-3 block text-[0.8125rem] leading-relaxed text-gray-1000 tabular-nums"
-            >
-              {formatBlogDate(post.date)}
-            </time>
-          ) : null}
-          <div className="flex flex-col">
-            <h1 className="font-medium text-gray-1200 leading-snug">
-              {post.title}
-            </h1>
-            {post.description ? (
-              <p className="text-gray-1100 leading-snug">{post.description}</p>
+          <header className="blog-header fade-in-item" style={stagger.next()}>
+            {post.date ? (
+              <time dateTime={post.date} className="blog-date tabular-nums">
+                {formatBlogDate(post.date)}
+              </time>
             ) : null}
-          </div>
-          {post.tags && post.tags.length > 0 ? (
-            <ul className="mt-3 flex flex-wrap gap-1.5 p-0 list-none">
-              {post.tags.map((tag) => (
-                <li key={tag}>
-                  <span
-                    className={`inline-block rounded-full px-2.5 py-1 text-xs leading-4 font-medium ${tagTone(tag)}`}
-                  >
-                    {tag}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          ) : null}
-        </header>
+            <div className="flex flex-col">
+              <h1 className="blog-title">{post.title}</h1>
+              {post.description ? (
+                <p className="blog-description">{post.description}</p>
+              ) : null}
+            </div>
+            {post.tags && post.tags.length > 0 ? (
+              <ul className="blog-tags mt-4 flex flex-wrap gap-1.5 p-0 list-none">
+                {post.tags.map((tag) => (
+                  <li key={tag}>
+                    <span
+                      className={`inline-block rounded-full px-2.5 py-1 text-xs leading-4 font-medium ${tagTone(tag)}`}
+                    >
+                      {tag}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </header>
 
-        <article className="fade-in-item" style={stagger.next()}>
-          <BlogProse content={post.content} />
-        </article>
+          <ArticleTableOfContents headings={tableOfContentsHeadings} />
+
+          <article
+            id={post.headings.length === 0 ? "article-introduction" : undefined}
+            className="fade-in-item"
+            style={stagger.next()}
+          >
+            <BlogProse content={post.content} headings={post.headings} />
+          </article>
+        </div>
       </main>
     </>
   );

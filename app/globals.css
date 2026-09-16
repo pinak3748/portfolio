@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -783,9 +789,53 @@ body {
   /* border-radius: 10px; */
 }
 
-/* Blog — same type language as the rest of the site */
+/* Blog — editorial reading scale within the site’s existing type system. */
+.blog-detail-content {
+  line-height: 1.68;
+}
+
+.blog-back {
+  margin-bottom: 2.5rem;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.blog-header {
+  margin-bottom: 1.75rem;
+}
+
+.blog-date {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--color-gray-1000);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+}
+
+.blog-title {
+  max-width: 38rem;
+  color: var(--color-gray-1200);
+  font-size: clamp(1.875rem, 1.72rem + 0.65vw, 2.125rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.blog-description {
+  max-width: 36rem;
+  margin-top: 0.625rem;
+  color: var(--color-gray-1000);
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+}
+
 .blog-prose {
   color: var(--color-gray-1100);
+  font-size: 1rem;
+  line-height: 1.68;
 }
 
 .blog-prose > :first-child {
@@ -806,20 +856,45 @@ body {
   margin-top: 1rem;
 }
 
-.blog-prose h2,
-.blog-prose h3,
-.blog-prose h4 {
-  margin-top: 2.5rem;
+.blog-prose > p:first-child {
   color: var(--color-gray-1200);
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.375;
+  font-size: 1.125rem;
+  letter-spacing: -0.012em;
+  line-height: 1.55;
 }
 
-.blog-prose h2 + p,
-.blog-prose h3 + p,
-.blog-prose h4 + p {
-  margin-top: 0.25rem;
+.blog-prose > h2,
+.blog-prose > h3,
+.blog-prose > h4 {
+  color: var(--color-gray-1200);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  scroll-margin-top: 2rem;
+  text-wrap: balance;
+}
+
+.blog-prose > h2 {
+  margin-top: 3.75rem;
+  font-size: 1.375rem;
+  line-height: 1.24;
+}
+
+.blog-prose > h3 {
+  margin-top: 2.5rem;
+  font-size: 1.125rem;
+  line-height: 1.35;
+}
+
+.blog-prose > h4 {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.blog-prose > h2 + p,
+.blog-prose > h3 + p,
+.blog-prose > h4 + p {
+  margin-top: 0.75rem;
 }
 
 .blog-prose strong {
@@ -837,8 +912,13 @@ body {
 }
 
 .blog-prose blockquote {
+  border-left: 2px solid var(--color-gray-500);
+  padding-left: 1rem;
   color: var(--color-gray-1200);
+  font-size: 1.125em;
   font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.5;
 }
 
 .blog-prose a[data-footnote-ref] {
@@ -857,9 +937,18 @@ body {
 }
 
 .blog-prose .footnotes {
-  margin-top: 0.5rem;
+  margin-top: 1.25rem;
   color: var(--color-gray-1000);
   font-size: 0.875rem;
+}
+
+.blog-prose .footnotes > h2 {
+  margin-top: 1.5rem;
+  color: var(--color-gray-1100);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.4;
 }
 
 .blog-prose .footnotes p,
@@ -925,4 +1014,253 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 0.375rem;
+}
+
+/* Article contents — a compact reading rail on wide, hover-capable screens. */
+.article-toc-rail {
+  display: none;
+}
+
+.article-toc-mobile {
+  margin: 0 0 2.25rem;
+  border-top: 1px solid var(--color-gray-400);
+  border-bottom: 1px solid var(--color-gray-400);
+}
+
+.article-toc-toggle {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.625rem;
+  min-height: 2.75rem;
+  padding: 0.625rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-gray-1100);
+  font: inherit;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  text-align: left;
+  transition: transform 120ms var(--ease-out);
+}
+
+.article-toc-toggle:hover,
+.article-toc-toggle:focus-visible {
+  color: var(--color-gray-1200);
+}
+
+.article-toc-toggle:focus-visible,
+.article-toc-link:focus-visible {
+  outline: 2px solid var(--color-gray-1200);
+  outline-offset: 3px;
+}
+
+.article-toc-toggle:active {
+  transform: scale(0.98);
+}
+
+.article-toc-toggle-label {
+  color: var(--color-gray-1200);
+  font-weight: 500;
+}
+
+.article-toc-toggle-count {
+  color: var(--color-gray-900);
+  font-size: 0.6875rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.article-toc-toggle-current {
+  overflow: hidden;
+  color: var(--color-gray-1000);
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.article-toc-toggle-icon {
+  width: 0.75rem;
+  color: var(--color-gray-900);
+  font-size: 1rem;
+  text-align: right;
+}
+
+.article-toc-mobile-panel {
+  padding: 0 0 0.75rem;
+}
+
+.article-toc-track {
+  position: relative;
+}
+
+.article-toc-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.article-toc-item {
+  display: flex;
+  min-height: 2.75rem;
+  align-items: center;
+}
+
+.article-toc-link {
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.25rem 0;
+  color: var(--color-gray-1000);
+  font-size: 0.75rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.article-toc-link:hover,
+.article-toc-link:focus-visible,
+.article-toc-link.is-active {
+  color: var(--color-gray-1200);
+}
+
+.article-toc-copy {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 1.375rem minmax(0, 1fr);
+  gap: 0.375rem;
+}
+
+.article-toc-index {
+  color: var(--color-gray-800);
+  font-size: 0.625rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.article-toc-label {
+  min-width: 0;
+}
+
+.article-toc-tick {
+  display: block;
+  width: 0.75rem;
+  height: 1px;
+  background: var(--color-gray-700);
+  transform-origin: right center;
+}
+
+.article-toc-link.is-active .article-toc-index {
+  color: var(--color-gray-1100);
+}
+
+.article-toc-link.is-active .article-toc-tick {
+  background: var(--color-gray-1200);
+}
+
+.article-toc-link-level-3 .article-toc-copy {
+  padding-left: 0.75rem;
+}
+
+.article-toc-link-level-3 .article-toc-tick {
+  width: 0.375rem;
+}
+
+@media (min-width: 70rem) and (hover: hover) and (pointer: fine) {
+  .article-toc-mobile {
+    display: none;
+  }
+
+  .article-toc-rail {
+    position: fixed;
+    top: 50%;
+    right: calc(50% + 21.625rem + 1.75rem);
+    z-index: 10;
+    display: block;
+    width: 12.5rem;
+    padding: 1rem 0 1rem 1rem;
+    transform: translateY(-50%);
+  }
+
+  .article-toc-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.625rem;
+    padding-right: 0.0625rem;
+    color: var(--color-gray-900);
+    font-size: 0.625rem;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateX(0.375rem);
+    transition:
+      opacity 180ms var(--ease-out),
+      transform 180ms var(--ease-out);
+  }
+
+  .article-toc-track::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--color-gray-500);
+    content: "";
+  }
+
+  .article-toc-rail .article-toc-marker {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.75rem;
+    height: 1px;
+    background: var(--color-gray-1200);
+    transition: transform 180ms var(--ease-out);
+  }
+
+  .article-toc-rail .article-toc-item {
+    min-height: 1.625rem;
+  }
+
+  .article-toc-rail .article-toc-copy {
+    opacity: 0;
+    text-align: left;
+    transform: translateX(0.375rem);
+    transition:
+      opacity 180ms var(--ease-out),
+      transform 180ms var(--ease-out);
+  }
+
+  .article-toc-rail .article-toc-tick {
+    transition: transform 180ms var(--ease-out);
+  }
+
+  .article-toc-rail:hover .article-toc-meta,
+  .article-toc-rail:focus-within .article-toc-meta,
+  .article-toc-rail:hover .article-toc-copy,
+  .article-toc-rail:focus-within .article-toc-copy {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .article-toc-rail:hover .article-toc-tick,
+  .article-toc-rail:focus-within .article-toc-tick {
+    transform: scaleX(1.35);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .article-toc-toggle,
+  .article-toc-rail .article-toc-meta,
+  .article-toc-rail .article-toc-marker,
+  .article-toc-rail .article-toc-copy,
+  .article-toc-rail .article-toc-tick {
+    transition: none;
+  }
 }

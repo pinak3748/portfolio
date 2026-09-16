@@ -6,8 +6,15 @@ export type BlogPostListing = {
   tags?: string[];
 };
 
+export type BlogHeading = {
+  id: string;
+  title: string;
+  level: 2 | 3;
+};
+
 export type BlogPost = BlogPostListing & {
   content: string;
+  headings: BlogHeading[];
 };
 
 export function formatBlogDate(date: string): string {
